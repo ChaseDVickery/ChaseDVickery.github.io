@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Chase Vickery"
   avatar           : "me.jpg"
-  bio              : "PhD student in CS at Virginia Tech. I'm interested in deep learning, multi-agent systems, and reinforcement learning."
-  location         : "Blacksburg, VA"
+  bio              : "Virginia Tech Alumnus. I'm interested in deep learning, multi-agent systems, and reinforcement learning."
+  location         : "Lexington, KY"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"http://yourfullgooglescholarurl.com"
@@ -190,6 +190,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
+  other:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -234,6 +237,15 @@ defaults:
   - scope:
       path: ""
       type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _other
+  - scope:
+      path: ""
+      type: other
     values:
       layout: single
       author_profile: true
